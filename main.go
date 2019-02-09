@@ -1,13 +1,16 @@
 package main
 
 import (
+	"GoNotes/Api"
+	"GoNotes/Services"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"GoNotes/Api"
 )
 
 func main() {
+	Services.GetDatabase(true)
+
 	router := mux.NewRouter()
 	router.HandleFunc("/people", Api.GetPeople).Methods("GET")
 	router.HandleFunc("/people/{id}", Api.GetPerson).Methods("GET")
