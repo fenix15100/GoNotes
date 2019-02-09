@@ -14,5 +14,5 @@ func CreatePerson(w http.ResponseWriter, r *http.Request) {
 
 }
 func DeletePerson(w http.ResponseWriter, r *http.Request) {
-	
+
 }
