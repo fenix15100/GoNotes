@@ -10,11 +10,11 @@
   version = "v1.7.0"
 
 [[projects]]
-  digest = "1:57072e5ce133ed6023e6ff49d9f19dcfb09f0fc8da693b1a8ac2eaa038ac858f"
+  digest = "1:7e63b12cdd7bef2c411d736cb67e28134d39f5d236aa1bfb8f3d55e3ad709eca"
   name = "github.com/jinzhu/gorm"
   packages = [
     ".",
-    "dialects/sqlite",
+    "dialects/postgres",
   ]
   pruneopts = "UT"
   revision = "472c70caa40267cb89fd8facb07fe6454b578626"
@@ -29,12 +29,16 @@
   revision = "04140366298a54a039076d798123ffa108fff46c"
 
 [[projects]]
-  digest = "1:4a49346ca45376a2bba679ca0e83bec949d780d4e927931317904bad482943ec"
-  name = "github.com/mattn/go-sqlite3"
-  packages = ["."]
+  digest = "1:b18ffc558326ebaed3b4a175617f1e12ed4e3f53d6ebfe5ba372a3de16d22278"
+  name = "github.com/lib/pq"
+  packages = [
+    ".",
+    "hstore",
+    "oid",
+  ]
   pruneopts = "UT"
-  revision = "c7c4067b79cc51e6dfdcef5c702e74b1e0fa7c75"
-  version = "v1.10.0"
+  revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
+  version = "v1.0.0"
 
 [solve-meta]
   analyzer-name = "dep"
@@ -42,7 +46,7 @@
   input-imports = [
     "github.com/gorilla/mux",
     "github.com/jinzhu/gorm",
-    "github.com/jinzhu/gorm/dialects/sqlite",
+    "github.com/jinzhu/gorm/dialects/postgres",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

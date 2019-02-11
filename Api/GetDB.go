@@ -5,7 +5,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-func getDBapi()(*gorm.DB)  {
+func GetDbApi()(*gorm.DB)  {
 
 	var db = Services.GetDatabase(false)
 

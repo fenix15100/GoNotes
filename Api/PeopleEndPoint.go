@@ -2,9 +2,11 @@ package Api
 
 import "net/http"
 
-var db = getDBapi()
+var db = GetDbApi()
 
 func GetPeople(w http.ResponseWriter, r *http.Request) {
+
+
 
 }
 func GetPerson(w http.ResponseWriter, r *http.Request) {
